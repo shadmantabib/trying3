@@ -1,0 +1,56 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<style>
+  /* Add your custom styles for the new-page.html here */
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top:300px;
+  }
+
+  .image-container img {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .top-right-sentence {
+    position: fixed;
+    top: 180px;
+    right: 400px;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Lucida Handwriting', cursive;
+    color: white;
+  }
+</style>
+
+<div class="container">
+    <div class="top-right-sentence">
+        <p>"Why do fireflies have to die so soon?"</p>
+      </div>
+
+  <div class="image-container">
+    <!-- Add your brother's pictures here -->
+    <img src="\static\blog\jahin.png" alt="Image 1">
+    <img src="\static\blog\jahin2.jpg" alt="Image 2">
+    <img src="\static\blog\jahin3.jpg" alt="Image 2">
+    <img src="\static\blog\jahin4.jpg" alt="Image 2">
+    <img src="\static\blog\jahin5.jpg" alt="Image 2">
+    <img src="\static\blog\jahin6.jpg" alt="Image 2">
+    <img src="\static\blog\jahin7.jpg" alt="Image 2">
+    <img src="\static\blog\jahin8.jpg" alt="Image 2">
+    <img src="\static\blog\jahin9.jpg" alt="Image 2">
+    <img src="\static\blog\jahin10.jpg" alt="Image 2">
+    <img src="\static\blog\jahin11.jpg" alt="Image 2">
+    <img src="\static\blog\jahin12.jpg" alt="Image 2">
+    <img src="\static\blog\jahin13.jpg" alt="Image 2">
+    <!-- Add more images as needed -->
+  </div>
+</div>
+
+{% endblock content %}
